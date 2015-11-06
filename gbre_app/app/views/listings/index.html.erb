@@ -1,0 +1,20 @@
+<title>Green Bay Real Estate</title>
+<header>Green Bay Real Estate</header>
+
+<div id="menu">
+	<ul>
+		<li>Home</li>
+		<li>Listings</li>
+		<li>About</li>
+		<li>Contact Us</li>
+	</ul>
+</div>
+<div id="listings">
+	<% @listings.each do |listing| %>
+		<h4>Address: </h4><%= listing.address %><br>
+		<h4>Unit #: </h4> <%= listing.unit %><br>
+		<h4>Price: </h4> <%= listing.price %><br>
+		<h4>Description: </h4><%= listing.description %><br>
+		<h4>Image: </h4><%= listing.img_url %>
+	<% end %>
+</div>
