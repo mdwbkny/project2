@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :agents
   resources :listings
 
-  root 'listings#index'
+  root 'listings#home'
 
   get 'listings' => 'listings#create'
 
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'listings/new' => 'listings#new'
 
-  get 'listings/id/edit' => 'tweets#edit'
+  get 'listings/id/edit' => 'listings#edit'
 
   get 'listings/id' => 'listings#show'
 

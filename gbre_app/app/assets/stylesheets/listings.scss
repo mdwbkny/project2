@@ -4,6 +4,7 @@
 
 body {
 	background: #2A433A;
+	color: white;
 }
 
 header {
@@ -13,11 +14,6 @@ header {
 
 h4 {
 	text-decoration: underline;
-}
-
-#listings {
-	border: solid;
-	color: #FFC20E;
 }
 
 #menu {
@@ -31,4 +27,14 @@ ul {
 
 li {
 	display: inline;
+}
+
+#listing {
+	border: solid;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
 }
