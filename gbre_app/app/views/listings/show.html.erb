@@ -1,9 +1,10 @@
 <center><h2>Current Listing</h2></center>
 
-<h4>Address:</h4> <%= @listings.address %>
-<h4>Unit #:</h4> <%= @listings.unit %>
-<h4>Price: $</h4><%= @listings.price %>
-<h4>Description:</h4> <%= @listings.description %>
-<h4>Image:</h4> <%= @listings.img_url %><p>
+<h4>Address:</h4> <h3><%= @listings.address %></h3>
+<h4>Unit #:</h4> <h3><%= @listings.unit %></h3>
+<h4>Price: $</h4> <h3><%= @listings.price %></h3>
+<h4>Description:</h4> <h3><%= @listings.description %></h3>
+<h4>Agent ID:</h4> <h3><%= @listings.agent_id %></h3>
+<h4>Image:</h4> <h3><%= @listings.img_url %><p></h3>
 
-<%= link_to "Back", listings_path %>
+<%= link_to 'Back', listings_path %>

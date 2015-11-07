@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :agents
   resources :listings
 
   root 'listings#home'
@@ -19,6 +18,8 @@ Rails.application.routes.draw do
   delete 'listings/id' => 'listings#destroy'
 
 end
+
+
 
 # Prefix Verb   URI Pattern                  Controller#Action
 #       agents GET    /agents(.:format)            agents#index

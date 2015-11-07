@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-	# before_action :set_listing, only: [:show, :edit, :update, :destroy]
+	before_action :set_listing, only: [:edit, :update, :destroy]
 
 	def index
 		@listings = Listing.all
@@ -14,21 +14,22 @@ class ListingsController < ApplicationController
 	end
 
 	def create
-		@listings = Listing.new(params[:listings_id])
-		if @listings.save
-			redirect_to @listings, alert: "Listing created successfully!"
-		else
-			redirect_to new_listings_path, alert: "Error creating listing!"
+		@listings = Listing.new(listing_params)
+			@listings.save
+			redirect_to listings_path
 		end
 	end
 
-
 	def edit
+		@listings = Listing.find(listing_params)
+		redirect_to listings_path
 	end
 
 	def destroy
-		@listing.destroy
-		redirect_to listings_url
+		@listings = Listing.destroy
+		redirect_to listings_path
 	end
 
+def listing_params
+	params.require(:listing).permit(:address, :unit, :price, :description, :img_url)
 end

@@ -1,8 +1,18 @@
-<%= form_for @listing do |form| %>
-	Address: <%= form.text_field :address %><br>
-	Unit #: <%= form.text_field :unit %><br>
-	Price: <%= form.text_field :price %><br>
-	Description: <%= form.text_field :description %><br>
-	Image: <%= form.text_field :img_url %><br>
-	<%= form.submit %>
+<%= form_for @listing do |f| %>
+	<%= f.label :address %>:
+	<%= f.text_field :address %><br><br>
+
+	<%= f.label :unit %>:
+	<%= f.text_field :unit %><br><br>
+
+	<%= f.label :price %>: $
+	<%= f.text_field :price %><br><br>
+
+	<%= f.label :description %>:
+	<%= f.text_area :description %><br><br>
+
+	<%= f.label :image %>:
+	<%= f.text_field :img_url %><br><br>
+
+	<%= f.submit %>
 <% end %>
