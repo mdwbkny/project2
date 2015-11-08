@@ -9,7 +9,7 @@
 <center>
 <h2>Edit Your Listing</h2>
 <div id="form"><br>
-<%= form_for @listings, url: {action: "update"} do |f| %>
+<%= form_for @listing, url: {action: "update"} do |f| %>
 	<%= f.label :address %>:<br>
 	<%= f.text_field :address %><br><br>
 

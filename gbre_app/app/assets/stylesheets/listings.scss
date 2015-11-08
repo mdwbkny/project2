@@ -9,7 +9,7 @@ body {
 
 #head {
 	text-align: center;
-	color: #FFC20E	
+	color: #FFC20E;
 }
 
 h4 {
@@ -31,6 +31,7 @@ li {
 
 #listing {
 	border: solid;
+	border-spacing: 0;
 }
 
 footer {
@@ -46,10 +47,9 @@ footer {
 
 a {
 	color: white;
-}
-
-a:hover {
-	color: #FFC20E;
+	&:hover {
+		color: #FFC20E;
+	}
 }
 
 #form1 {
@@ -60,8 +60,13 @@ a:hover {
 	width: 300px;
 }
 
-#pure-table {
+table.pure-table {
 	color: #FFC20E;
+	tbody {
+		tr {
+			background-color: #fff;
+		}		
+	}
 }
 
 h2 {

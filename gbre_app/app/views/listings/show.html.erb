@@ -12,8 +12,8 @@
 <center><h2>Current Listing</h2></center>
 
 <center><%= link_to 'Back', listings_path %>
-<%= link_to 'Edit', @listings, :method => 'edit' %>    
-<%= link_to 'Delete', @listings, :method => 'delete' %>
+<%= link_to 'Edit', edit_listing_path(@listing) %>    
+<%= link_to 'Delete', @listing, :method => 'delete' %>
 </center><br><br>
 <center>
 <table class="pure-table">
@@ -30,12 +30,12 @@
 
     <tbody>
         <tr>
-            <td><%= @listings.id %></td>
-            <td><%= @listings.address %></td>
-            <td><%= @listings.unit %></td>
-            <td>$<%= @listings.price %>.00</td>
-            <td><%= @listings.description %></td>
-            <td><%= image_tag @listings.image.url(:medium) %></td>
+            <td><%= @listing.id %></td>
+            <td><%= @listing.address %></td>
+            <td><%= @listing.unit %></td>
+            <td>$<%= @listing.price %>.00</td>
+            <td><%= @listing.description %></td>
+            <td><%= image_tag @listing.image.url(:medium) %></td>
         </tr>
     </tbody><center>
 </table>
