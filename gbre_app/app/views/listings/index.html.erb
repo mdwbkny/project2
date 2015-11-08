@@ -9,23 +9,25 @@
 	</ul>
 </div>
 <body>
-<table>
-	<tr>
-		<th>Address:</th
-		<th>Unit #:</th>
-		<th>Price:</th>
-		<th>Description:</th>
-	</tr>
+	<table>
+		<tr>
+			<th>Image: </th>
+			<th>Address:</th
+			<th>Unit #:</th>
+			<th>Price:</th>
+			<th>Description:</th>
+		</tr>
 
-<% @listings.each do |listing| %>
-	<tr>
-		<td><%= listing.address %></td>
-		<td><%= listing.unit %></td>
-		<td>$<%= listing.price %>.00</td>
-		<td><%= listing.description %></td>
-		<td><%= link_to "Show", listing %></td>
-		<% end %>
-</table>
+	<% @listings.each do |listing| %>
+		<tr>
+			<td><%= image_tag listing.image.url(:thumb) %></td>
+			<td><%= listing.address %></td>
+			<td><%= listing.unit %></td>
+			<td>$<%= listing.price %>.00</td>
+			<td><%= listing.description %></td>
+			<td><%= link_to "Show", listing %></td>
+			<% end %>
+	</table>
 </body>
 <footer>&copy; Copyright 2015 - Green Bay Real Estate</footer>
 </html>

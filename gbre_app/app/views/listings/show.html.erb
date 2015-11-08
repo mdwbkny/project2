@@ -5,6 +5,7 @@
 <h4>Price: $</h4> <h3><%= @listings.price %></h3>
 <h4>Description:</h4> <h3><%= @listings.description %></h3>
 <h4>Agent ID:</h4> <h3><%= @listings.agent_id %></h3>
-<h4>Image:</h4> <h3><%= @listings.img_url %><p></h3>
+<h4>Image:</h4> <h3><%= image_tag @listings.image.url(:large) %><p></h3>
 
 <%= link_to 'Back', listings_path %>
+<%= link_to 'Delete', @listings, :method => 'delete' %>

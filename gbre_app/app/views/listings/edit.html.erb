@@ -1,6 +1,6 @@
-<h1>Create a New Listing</h1>
+<h1>Edit Your Listing</h1>
 
-<%= form_for @listings, url: {action: "create"} do |f| %>
+<%= form_for @listings, url: {action: "update"} do |f| %>
 	<%= f.label :address %>:
 	<%= f.text_field :address %><br><br>
 
@@ -19,6 +19,6 @@
 	<%= f.label :agent_id %>:
 	<%= f.text_field :agent_id %><br><br>
 
-	<%= f.submit "Create" %>
+	<%= f.submit "Update" %>
 
 <% end %>
