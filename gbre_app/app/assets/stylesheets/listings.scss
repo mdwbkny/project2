@@ -4,12 +4,12 @@
 
 body {
 	background: #2A433A;
-	color: white;
+	
 }
 
-header {
+#head {
 	text-align: left;
-	color: #FFC20E
+	color: #FFC20E	
 }
 
 h4 {
@@ -41,6 +41,7 @@ footer {
 
 #users {
 	display: inline;
+
 }
 
 a {
@@ -51,6 +52,26 @@ a:hover {
 	color: #FFC20E;
 }
 
-table, th, td {
-    border: 1px solid black;
+#form1 {
+	border: solid;
+	border-color: #FFC20E;
+	text-align: center;
+	height: 325px;
+	width: 300px;
+}
+
+#pure-table {
+	color: #FFC20E;
+}
+
+h2 {
+	color: #FFC20E;
+}
+
+#form {
+	border: solid;
+	border-color: #FFC20E;
+	text-align: center;
+	height: 375px;
+	width: 300px;
 }

@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   root 'listings#home'
 
-  devise_for :users
-
   resources :listings
+
+  devise_for :users
   
 end
 
