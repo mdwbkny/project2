@@ -32,6 +32,8 @@ gem 'devise'
 # Installing Pure CSS
 gem 'pure-css-rails'
 
+gem 'heroku'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
