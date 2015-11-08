@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'listings#home'
 
+  devise_for :users
+
   resources :listings
   
 end
