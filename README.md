@@ -1,10 +1,10 @@
 ***Project 2 - Green Bay Real Estate***
 
 ***Live Web Project*** - 
-morning-everglades-9615.herokuapp.com/
+http://www.morning-everglades-9615.herokuapp.com/
 
 ***Link to Project Repo*** - 
-github.com/mdwbkny/project2/tree/master/gbre_app
+http://www.github.com/mdwbkny/project2/tree/master/gbre_app
 
 ***Technologies Used*** - 
 For this project I used Ruby on Rails, Pure CSS, CSS, Git, GitHub, Paperclip, Devise, and Heroku.
