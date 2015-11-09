@@ -1,7 +1,7 @@
 ***Project 2 - Green Bay Real Estate***
 
 ***Live Web Project*** - 
-http://www.morning-everglades-9615.herokuapp.com/
+https://morning-everglades-9615.herokuapp.com/
 
 ***Link to Project Repo*** - 
 http://www.github.com/mdwbkny/project2/tree/master/gbre_app
