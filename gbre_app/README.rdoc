@@ -1,4 +1,4 @@
-***Project 2 - Green Bay Real Estate***
+**Project 2 - Green Bay Real Estate**
 
 ***Live Web Project***
 https://morning-everglades-9615.herokuapp.com/
