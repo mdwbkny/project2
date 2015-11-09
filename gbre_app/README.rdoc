@@ -1,28 +1,14 @@
-== README
+***Project 2 - Green Bay Real Estate***
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+***Live Web Project***
+https://morning-everglades-9615.herokuapp.com/
 
-Things you may want to cover:
+***Link to Project Repo***
+https://github.com/mdwbkny/project2/tree/master/gbre_app
 
-* Ruby version
+***Technologies Used***
+For this project I used Ruby on Rails, Pure CSS, CSS, Git, GitHub, Paperclip, Devise, and Heroku.
 
-* System dependencies
+***Approach***
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+My approach was to create the basics first. Then go back and build out the inidividual functions. Items like the splash page, listings page, add, edit, and delete functions as well. I was also able to add paperclip to include images and Devise for user authorization.
